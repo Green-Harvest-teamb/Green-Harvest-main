@@ -1,0 +1,243 @@
+body {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color: #7a3145;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  
+  ul,
+  ol {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  .container {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .howitworks {
+    display: flex;
+    flex-direction: column;
+  }
+  .background-red {
+    padding: 40px 0px;
+    background-color:#7a3145 ;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  .img-one {
+    border-radius: 30px;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    
+  }
+  
+  .img-one::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(
+      0deg,
+      rgba(20, 20, 20, 0.3) 0%,
+      rgba(20, 20, 20, 0.3) 100%
+    );
+  }
+  
+  .background-green{
+    background-color:  #576f35;
+    padding: 80px 0px;
+  }
+  
+  .container-info{
+    padding: 0px 20px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .header-title{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin: 0 auto 20px;
+    color: #fbfbfb;
+    width: 100%;
+  }
+  
+  .title-span-text{
+    color: rgba(251, 251, 251, 0.3);
+  }
+  
+  .header-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    margin: 0 auto 40px;
+    width: 100%;
+  }
+  
+  .content-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .content-item {
+    display: flex;
+    min-width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    padding: 12px 27px 12px 24px;
+    background-color: #fbfbfb;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  
+    ol {
+      counter-reset: counter-item;
+    }
+  
+    .content-item::before {
+      counter-increment: counter-item;
+      content: counters(counter-item, ".") " ";
+      width: 52px;
+      height: 52px;
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      background-color: #7a3145;
+      border: 5px solid #d0bfc4;
+      border-radius: 50%;
+      /* number-style */
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 100%;
+      letter-spacing: -0.02em;
+      margin-right: 24px;
+    }
+  
+    .text-item {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 117%;
+      letter-spacing: -0.02em;
+      color: rgba(20, 20, 20, 0.6);
+    }
+  
+    .text-item-span {
+      font-weight: 700;
+      color: #141414;
+    }
+  
+    @media screen and (min-width: 768px) {
+      .container {
+        max-width: 768px;
+        padding: 0 32px;
+      }
+      .header-text {
+        width: 450px;
+        font-size: 32px;
+      }
+      .header-title {
+        width: 450px;
+        font-size: 32px;
+      }
+      .content-items {
+        width: 450px;
+        font-size: 32px;
+      }
+      .header-text {
+        font-size: 16px;
+      }
+      .text-item {
+        font-size: 16px;
+      }
+      .background-red {
+        padding: 100px 32px;
+      }
+      .container-info {
+        padding: 0 159px;
+      }
+      .container-img {
+        padding: 0 64px;
+      }
+    }
+  
+    @media screen and (min-width: 1280px) {
+      .container {
+        max-width: 1280px;
+        padding: 0 100px;
+      }
+      .howitworks {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .img-one {
+        /* width: 630px; */
+      }
+      .container-info {
+        width: 650px;
+      }
+      .howitworks .container-info {
+        padding: 0 100px;
+        margin: 0 auto;
+      }
+      .background-green {
+        padding-top: 100px;
+        padding-bottom: 160px;
+  
+      }
+      .background-red {
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+      .container-img{
+        width: 630px;
+      }
+    }
+  
+       
