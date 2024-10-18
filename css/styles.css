@@ -243,7 +243,7 @@ body {
   
 
 /* VEGETABLES-BERK START*/
-p,
+
 *,
 *::before,
 *::after {
@@ -809,16 +809,12 @@ body {
   margin: 0 auto;
   align-items: center;
 }
-
-section {
-  padding: 100px;
-}
 .vegetables {
   background-color: #7a3145;
   width: 100%;
   margin: 0 auto;
+  padding: 100px;
 }
-
 .vegetables .organic-title {
   font-size: 64px;
   font-weight: 600;
@@ -908,11 +904,13 @@ section {
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
+  .vegetables {
+    padding: 80px 26px;
+  }
   .vegetables .box-container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
@@ -925,6 +923,7 @@ section {
     border-radius: 40px;
     padding: 32px;
     gap: 10px;
+    width: 334px;
     min-height: 379px;
     display: flex;
     width: 100%;
@@ -935,6 +934,7 @@ section {
   }
   .vegetables .vegetables-text {
     max-width: 335px;
+    width: 100%;
     height: 72px;
     font-size: 14px;
     font-weight: 500;
@@ -944,7 +944,6 @@ section {
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
-    margin-left: 90px;
   }
   .vegetables .box-container .box-list {
     display: flex;
@@ -955,19 +954,25 @@ section {
     justify-content: center;
   }
   .vegetables .organic-title {
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 600;
     letter-spacing: -1.5%;
     text-align: left;
     display: block;
-    max-width: 508px;
+    max-width: 335px;
     width: 100%;
     margin-bottom: 25px;
-    margin-left: 80px;
+  }
+  .vegetables .vegetables-title {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -1.5%;
+    text-align: left;
+    color: #fbfbfb4d;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1280px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
   .vegetables .box-container {
     display: flex;
     flex-direction: row;
@@ -983,8 +988,9 @@ section {
     background-color: #fff;
     position: relative;
     border-radius: 40px;
-    padding: 32px;
+    padding: 32px 30px;
     gap: 10px;
+    width: 342px;
     min-height: 379px;
     display: flex;
     width: 100%;
@@ -995,6 +1001,7 @@ section {
   }
   .vegetables .vegetables-text {
     max-width: 626px;
+    width: 100%;
     height: 40px;
     font-size: 16px;
     font-weight: 500;
@@ -1005,9 +1012,11 @@ section {
     display: flex;
     flex-direction: column;
   }
+  .vegetables .box-container .box-list .box-item {
+    width: calc((100% - 40px) / 2);
+  }
 }
 /* VEGETABLES-BERK END */
-
 header a {
   text-decoration: none;
 }
@@ -1227,4 +1236,4 @@ header a {
     line-height: 20px;
     top: 70px;
   }
-}
+
