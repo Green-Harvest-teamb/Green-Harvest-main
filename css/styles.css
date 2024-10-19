@@ -658,6 +658,12 @@ img {
   margin: 0 auto;
   padding: 100px;
 }
+.container-vegetables {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
 .vegetables .organic-title-vegetables {
   font-size: 64px;
   font-weight: 600;
@@ -744,6 +750,10 @@ img {
   gap: 12px;
   z-index: 10;
 }
+.vegetables .box-container-vegetables .box-list-vegetables .box-item-vegetables {
+  width: calc((100% - 42px) / 3);
+}
+
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .vegetables {
     padding: 80px 26px;
