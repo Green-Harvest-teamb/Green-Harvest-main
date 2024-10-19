@@ -727,6 +727,9 @@ img {
   gap: 12px;
   z-index: 10;
 }
+.vegetables .box-container .box-list .box-item-vegetables {
+  width: calc((100% - 42px) / 3);
+}
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .vegetables {
     padding: 80px 26px;
