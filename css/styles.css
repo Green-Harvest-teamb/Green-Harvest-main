@@ -51,11 +51,13 @@ header a {
       rgba(20, 20, 20, 0.2)
     ),
     url(../images/background-image/vegetables.jpg);
+    position: relative;
+    left: 310px;
 }
 
 .header-svg-hero {
   position: relative;
-  left: 75px;
+  left: -400px;
   top: 44px;
 }
 
@@ -76,7 +78,7 @@ header a {
 .green-harvest-hero {
   color: #fbfbfb;
   position: relative;
-  left: 80px;
+  left: -390px;
 }
 
 .page-menu-list-hero {
@@ -125,7 +127,7 @@ header a {
   color: #fbfbfb;
   position: relative;
   top: 100px;
-  left: 30px;
+  left: -400px;
 }
 
 .text-hero {
@@ -138,7 +140,7 @@ header a {
   color: #fbfbfb;
   position: relative;
   top: 200px;
-  left: 30px;
+  left: -400px;
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
@@ -155,6 +157,7 @@ header a {
         rgba(20, 20, 20, 0.2)
       ),
       url(../images/background-image/vegetables-mobile.jpg);
+      left: 0px;
   }
 
   .header-list-hero {
@@ -187,6 +190,7 @@ header a {
     font-size: 48px;
     line-height: 48px;
     top: 40px;
+    left: 50px;
   }
 
   .text-hero {
@@ -196,6 +200,7 @@ header a {
     font-size: 14px;
     line-height: 18px;
     top: 100px;
+    left: 50px;
   }
 }
 
@@ -213,6 +218,7 @@ header a {
         rgba(20, 20, 20, 0.2)
       ),
       url(../images/background-image/vegetables-tablet.jpg);
+      left: 0px;
   }
 
   .header-list-hero {
@@ -226,8 +232,8 @@ header a {
   .menu-tablet-hero {
     display: flex;
     position: absolute;
-    right: 30px;
     top: 32px;
+    right: 100px;
   }
 
   .green-harvest-hero {
@@ -245,6 +251,7 @@ header a {
     font-size: 76px;
     line-height: 76px;
     top: 40px;
+    left: 50px;
   }
 
   .text-hero {
@@ -254,6 +261,7 @@ header a {
     font-size: 16px;
     line-height: 20px;
     top: 70px;
+    left: 50px;
   }
 }
 
@@ -322,7 +330,6 @@ ol {
   object-fit: cover;
   width: 100%;
   height: auto;
-  
 }
 
 .img-one::after {
@@ -343,6 +350,8 @@ ol {
 .background-green{
   background-color:#576f35;
   padding: 80px 0px;
+  position: relative;
+  left: 0px;
 }
 
 .container-info{
@@ -462,6 +471,9 @@ ol {
     .container-img-howitworks {
       padding: 0 64px;
     }
+    .background-green {
+      left: 0px;
+    }
   }
 
   @media screen and (min-width: 1280px) {
@@ -495,6 +507,11 @@ ol {
     }
     .container-img-howitworks{
       width: 630px;
+    }
+    .background-green {
+      top: 0px;
+      left: 280px;
+      height: 759px;
     }
   }
 
@@ -726,9 +743,6 @@ img {
   position: relative;
   gap: 12px;
   z-index: 10;
-}
-.vegetables .box-container .box-list .box-item-vegetables {
-  width: calc((100% - 42px) / 3);
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .vegetables {
