@@ -658,6 +658,12 @@ img {
   margin: 0 auto;
   padding: 100px;
 }
+.container-vegetables {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
 .vegetables .organic-title-vegetables {
   font-size: 64px;
   font-weight: 600;
