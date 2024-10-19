@@ -57,7 +57,7 @@ header a {
 
 .header-svg-hero {
   position: relative;
-  left: -400px;
+  left: -260px;
   top: 44px;
 }
 
@@ -78,7 +78,7 @@ header a {
 .green-harvest-hero {
   color: #fbfbfb;
   position: relative;
-  left: -390px;
+  left: -250px;
 }
 
 .page-menu-list-hero {
@@ -127,7 +127,7 @@ header a {
   color: #fbfbfb;
   position: relative;
   top: 100px;
-  left: -400px;
+  left: -250px;
 }
 
 .text-hero {
@@ -140,7 +140,7 @@ header a {
   color: #fbfbfb;
   position: relative;
   top: 200px;
-  left: -400px;
+  left: -250px;
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
@@ -657,12 +657,6 @@ img {
   width: 100%;
   margin: 0 auto;
   padding: 100px;
-}
-.container-vegetables {
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
-  align-items: center;
 }
 .vegetables .organic-title-vegetables {
   font-size: 64px;
