@@ -33,6 +33,7 @@ ul {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 100px;
   align-items: center;
 }
 
@@ -51,6 +52,7 @@ header a {
       rgba(20, 20, 20, 0.2)
     ),
     url(../images/background-image/vegetables.jpg);
+    position: relative;
 }
 
 .header-svg-hero {
@@ -173,7 +175,7 @@ header a {
   }
 
   .green-harvest-hero {
-    left: 40px;
+    left: 30px;
   }
 
   .page-menu-list-hero {
@@ -226,12 +228,12 @@ header a {
   .menu-tablet-hero {
     display: flex;
     position: absolute;
-    right: 30px;
     top: 32px;
+    right: 100px;
   }
 
   .green-harvest-hero {
-    left: 40px;
+    left: 30px;
   }
 
   .page-menu-list-hero {
@@ -257,6 +259,37 @@ header a {
   }
 }
 
+body {
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  background-color: #7a3145;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
 body {
   font-family: "Inter Tight", sans-serif;
   font-optical-sizing: auto;
@@ -341,11 +374,12 @@ ol {
 }
 
 .background-green{
-  background-color:#576f35;
+  background-color:  #576f35;
   padding: 80px 0px;
 }
 
 .container-info{
+  padding: 0px 20px;
   width: 100%;
   height: 100%;
 }
@@ -372,7 +406,11 @@ ol {
   margin: 0 auto 40px;
   width: 100%;
 }
-x;
+
+.content-items-howitworks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .content-item-howitworks {
@@ -480,9 +518,6 @@ x;
     .background-green {
       padding-top: 100px;
       padding-bottom: 160px;
-      position: relative;
-      right: 34px;
-      top: -13px;
 
     }
     .background-red {
@@ -505,7 +540,7 @@ x;
 
 .ads {
   font-family: Inter Tight;
-  font-size: 76px;
+  font-size: 48px;
   font-weight: 600;
   line-height: 50px;
   text-align: left;
@@ -1667,10 +1702,4 @@ logo-svg{
       letter-spacing: -0.015em;
       text-align: left;
   }
-}
-
-.content-items-howitworks {
-  display: flex;
-  flex-direction: column;
-  gap: 20p
 }
