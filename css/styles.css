@@ -51,13 +51,11 @@ header a {
       rgba(20, 20, 20, 0.2)
     ),
     url(../images/background-image/vegetables.jpg);
-    position: relative;
-    left: 310px;
 }
 
 .header-svg-hero {
   position: relative;
-  left: -260px;
+  left: 75px;
   top: 44px;
 }
 
@@ -78,7 +76,7 @@ header a {
 .green-harvest-hero {
   color: #fbfbfb;
   position: relative;
-  left: -250px;
+  left: 80px;
 }
 
 .page-menu-list-hero {
@@ -127,7 +125,7 @@ header a {
   color: #fbfbfb;
   position: relative;
   top: 100px;
-  left: -250px;
+  left: 30px;
 }
 
 .text-hero {
@@ -140,7 +138,7 @@ header a {
   color: #fbfbfb;
   position: relative;
   top: 200px;
-  left: -250px;
+  left: 30px;
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
@@ -157,7 +155,6 @@ header a {
         rgba(20, 20, 20, 0.2)
       ),
       url(../images/background-image/vegetables-mobile.jpg);
-      left: 0px;
   }
 
   .header-list-hero {
@@ -190,7 +187,6 @@ header a {
     font-size: 48px;
     line-height: 48px;
     top: 40px;
-    left: 50px;
   }
 
   .text-hero {
@@ -200,7 +196,6 @@ header a {
     font-size: 14px;
     line-height: 18px;
     top: 100px;
-    left: 50px;
   }
 }
 
@@ -218,7 +213,6 @@ header a {
         rgba(20, 20, 20, 0.2)
       ),
       url(../images/background-image/vegetables-tablet.jpg);
-      left: 0px;
   }
 
   .header-list-hero {
@@ -232,8 +226,8 @@ header a {
   .menu-tablet-hero {
     display: flex;
     position: absolute;
+    right: 30px;
     top: 32px;
-    right: 100px;
   }
 
   .green-harvest-hero {
@@ -251,7 +245,6 @@ header a {
     font-size: 76px;
     line-height: 76px;
     top: 40px;
-    left: 50px;
   }
 
   .text-hero {
@@ -261,7 +254,6 @@ header a {
     font-size: 16px;
     line-height: 20px;
     top: 70px;
-    left: 50px;
   }
 }
 
@@ -330,6 +322,7 @@ ol {
   object-fit: cover;
   width: 100%;
   height: auto;
+  
 }
 
 .img-one::after {
@@ -350,8 +343,6 @@ ol {
 .background-green{
   background-color:#576f35;
   padding: 80px 0px;
-  position: relative;
-  left: 0px;
 }
 
 .container-info{
@@ -381,11 +372,7 @@ ol {
   margin: 0 auto 40px;
   width: 100%;
 }
-
-.content-items-howitworks {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+x;
 }
 
 .content-item-howitworks {
@@ -471,9 +458,6 @@ ol {
     .container-img-howitworks {
       padding: 0 64px;
     }
-    .background-green {
-      left: 0px;
-    }
   }
 
   @media screen and (min-width: 1280px) {
@@ -508,11 +492,6 @@ ol {
     .container-img-howitworks{
       width: 630px;
     }
-    .background-green {
-      top: 0px;
-      left: 278px;
-      height: 759px;
-    }
   }
 
 .advertisement {
@@ -526,7 +505,7 @@ ol {
 
 .ads {
   font-family: Inter Tight;
-  font-size: 48px;
+  font-size: 76px;
   font-weight: 600;
   line-height: 50px;
   text-align: left;
@@ -658,12 +637,6 @@ img {
   margin: 0 auto;
   padding: 100px;
 }
-.container-vegetables {
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
-  align-items: center;
-}
 .vegetables .organic-title-vegetables {
   font-size: 64px;
   font-weight: 600;
@@ -750,10 +723,6 @@ img {
   gap: 12px;
   z-index: 10;
 }
-.vegetables .box-container-vegetables .box-list-vegetables .box-item-vegetables {
-  width: calc((100% - 42px) / 3);
-}
-
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .vegetables {
     padding: 80px 26px;
@@ -1698,4 +1667,10 @@ logo-svg{
       letter-spacing: -0.015em;
       text-align: left;
   }
+}
+
+.content-items-howitworks {
+  display: flex;
+  flex-direction: column;
+  gap: 20p
 }
