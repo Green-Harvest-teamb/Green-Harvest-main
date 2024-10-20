@@ -54,7 +54,6 @@ header a {
       rgba(20, 20, 20, 0.2)
     ),
     url(../images/background-image/vegetables.jpg);
-
 }
 
 .header-svg-hero {
@@ -795,6 +794,10 @@ img {
   .vegetables {
     padding: 80px 26px;
   }
+  .organic-title-vegetables {
+    position: relative;
+    right: 90px;
+  }
   .vegetables .box-container-vegetables {
     display: flex;
     flex-direction: row;
@@ -833,6 +836,8 @@ img {
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    right: 90px;
   }
   .vegetables .box-container-vegetables .box-list-vegetables {
     display: flex;
