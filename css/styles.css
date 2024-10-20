@@ -54,7 +54,7 @@ header a {
       rgba(20, 20, 20, 0.2)
     ),
     url(../images/background-image/vegetables.jpg);
-  position: relative;
+
 }
 
 .header-svg-hero {
@@ -1576,7 +1576,7 @@ logo-svg {
   }
   .menuft-footer address {
     position: relative;
-    left: 50px;
+    left: 95%;
     transform: translateX(89%);
     bottom: 150px;
     width: 234px;
@@ -1588,7 +1588,7 @@ logo-svg {
     height: 146px;
     gap: 25px;
     position: relative;
-    left: 77%;
+
   }
   .menuft-footer .sag-footer a {
     font-size: 32px;
