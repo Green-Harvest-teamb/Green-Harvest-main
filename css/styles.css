@@ -232,18 +232,18 @@ header a {
   }
 
   .header-svg-hero {
-    left: 10px;
+    left: 30px;
   }
 
   .menu-tablet-hero {
     display: flex;
     position: absolute;
     top: 32px;
-    right: 100px;
+    right: 40px;
   }
 
   .green-harvest-hero {
-    left: 30px;
+    left: 50px;
   }
 
   .page-menu-list-hero {
