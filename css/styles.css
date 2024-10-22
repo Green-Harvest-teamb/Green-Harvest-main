@@ -72,7 +72,7 @@ header a {
 
 .header-list-hero {
   display: flex;
-  gap: 480px;
+  gap: 249px;
   padding-top: 20px;
   padding-right: 100px;
 }
@@ -88,6 +88,13 @@ header a {
   display: flex;
   /* padding-left: 5px; */
 }
+.is-open{
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
 
 .page-menu-hero {
   font-weight: 500;
@@ -100,7 +107,10 @@ header a {
   padding: 12px;
   color: #fbfbfb;
 }
-
+.page-menu-hero:hover{
+  background-color: #fbfbfb89;
+  transition: all 0.3s ease-in;
+}
 .shop-now-hero {
   font-weight: 600;
   font-size: 18px;
@@ -118,6 +128,7 @@ header a {
 
 .shop-now-hero:hover {
   background-color: #622133;
+  transition: all 0.3s ease-in;
 }
 
 .title-hero {
@@ -146,7 +157,9 @@ header a {
   top: 200px;
   /* left: 30px; */
 }
-
+.menu-checkbox {
+  display: none;
+}
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .container-hero {
     max-width: 768px;
@@ -172,6 +185,90 @@ header a {
     left: 10px;
   }
 
+.menu-checkbox {
+  display: none;
+}
+
+/* Menü kapalıyken gizlenir */
+#menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Toggle butonunun stili */
+label[for="menu-toggle"] {
+  cursor: pointer;
+  font-size: 24px;
+  background: none;
+  border: none;
+  padding: 0px;
+  position: absolute;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  right: 20px;
+}
+.menu-checkbox:checked + label {
+  z-index: 10001;
+  position: fixed;
+  right: 25px;
+}
+/* Çizgi şeklindeki butonun stilleri */
+label[for="menu-toggle"] span {
+  height: 2px;
+  width: 20px;
+  background: #FBFBFB;
+  border-radius: 10px;
+  transition: all 0.5s ease; /* Geçiş efekti */
+}
+
+/* Kapatma simgesi (X) için */
+#menu-toggle:checked + .menu-toggle span {
+  background: #FBFBFB; /* Arka planı kaldır */
+}
+
+#menu-toggle:checked + .menu-toggle span:nth-child(1) {
+  transform: rotate(45deg); /* Üst çizgiyi döndür */
+  bottom: 0;
+  position: absolute;
+  width: 22px;
+}
+
+#menu-toggle:checked + .menu-toggle span:nth-child(2) {
+  opacity: 0; /* Orta çizgiyi gizle */
+}
+
+#menu-toggle:checked + .menu-toggle span:nth-child(3) {
+  transform: rotate(-45deg); /* Alt çizgiyi döndür */
+  width: 22px;
+}
+
+label[for="menu-toggle"] .span2 {
+  width: 11px;
+}
+
+/* Checkbox işaretlendiğinde menü görünür hale gelir */
+.menu-checkbox:checked + label + #menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #7a3145;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
   .menu-mobile-hero {
     display: flex;
     position: absolute;
@@ -184,9 +281,33 @@ header a {
   }
 
   .page-menu-list-hero {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Linkler arasındaki boşluk */
+    margin-bottom: 200px;
   }
-
+  .page-menu-hero, .shop-now-hero {
+    font-size: 20px;
+    color: #fbfbfb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .shop-now-hero {
+    position: relative;
+    top: 300px;
+    background-color: #fbfbfb;
+    border: 1px solid #eeeeee;
+    padding: 20px 20px;
+    color: #7a3145;
+  }
+  
+  /* Hover durumu */
+  .page-menu-hero:hover, .shop-now-hero:hover {
+    color: #00b894;
+    background: transparent;
+  }
   .title-hero {
     max-width: 335px;
     width: 100%;
@@ -267,9 +388,9 @@ header a {
     left: 30px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1279px) {
-  .main-title-vegetables{
-    padding-left: 0;
+@media screen and (min-width:769px) and (max-width:1279px){
+  .page-menu-list-hero {
+    display: none;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -304,13 +425,85 @@ header a {
     top: 32px;
     right: 40px;
   }
-
+  label[for="menu-toggle"] {
+    cursor: pointer;
+    font-size: 24px;
+    background: none;
+    border: none;
+    padding: 10px;
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    left: 45%;
+  }
+  .menu-checkbox:checked + label {
+    z-index: 10001;
+    position: fixed;
+    left: 89%;
+    width: 41px;
+}
+  .menu-checkbox:checked + label + #menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #7a3145;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    left: 50%;
+}
   .green-harvest-hero {
     left: 50px;
   }
-
-  .page-menu-list-hero {
-    display: none;
+  label[for="menu-toggle"] span {
+    height: 2px;
+    width: 20px;
+    background: #FBFBFB;
+    border-radius: 10px;
+    transition: all 0.5s ease; /* Geçiş efekti */
+  }
+  
+  /* Kapatma simgesi (X) için */
+  #menu-toggle:checked + .menu-toggle span {
+    background: #FBFBFB; /* Arka planı kaldır */
+  }
+  
+  #menu-toggle:checked + .menu-toggle span:nth-child(1) {
+    transform: rotate(45deg); /* Üst çizgiyi döndür */
+    bottom: 10px;
+    position: absolute;
+    width: 25px;
+  }
+  
+  #menu-toggle:checked + .menu-toggle span:nth-child(2) {
+    opacity: 0; /* Orta çizgiyi gizle */
+  }
+  
+  #menu-toggle:checked + .menu-toggle span:nth-child(3) {
+    transform: rotate(-45deg); /* Alt çizgiyi döndür */
+    width: 25px;
+  }
+  /* Menüdeki linkler */
+  .page-menu-hero, .shop-now-hero {
+    font-size: 20px;
+    color: #fbfbfb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .shop-now-hero {
+    position: relative;
+    top: 300px;
+    background-color: #fbfbfb;
+    border: 1px solid #eeeeee;
+    padding: 20px 20px;
+    color: #7a3145;
+  }
+  
+  /* Hover durumu */
+  .page-menu-hero:hover, .shop-now-hero:hover {
+    color: #00b894;
+    background: transparent;
   }
 
   .title-hero {
@@ -838,6 +1031,11 @@ img {
   justify-content: space-between;
   object-fit: cover;
   margin: 0 auto;
+}
+.vegetables .box-container-vegetables .box-vegetables:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: all 0.2s ease-in;
 }
 .vegetables .box-container-vegetables .box-list-vegetables {
   display: flex;
@@ -1450,7 +1648,10 @@ a {
   letter-spacing: -0.015em;
   cursor: pointer;
 }
-
+.form-button-1:hover{
+  background-color: #7a3145;
+  transition: all 0.3s ease-in;
+}
 /* -----------just-network----------- */
 
 .just-network {
@@ -1685,6 +1886,10 @@ a {
   text-decoration: none;
   color: #fbfbfb;
 }
+.menuft-footer .sag-footer a:hover{
+  color: #576f35;
+  transition: all 0.3s ease-in;
+}
 .sag-footer ul {
   list-style: none;
   display: flex;
@@ -1702,6 +1907,10 @@ a {
   text-align: left;
   text-decoration: none;
   color: #fbfbfb;
+}
+.menuft-footer address a:hover {
+  color: #576f35;
+  transition: all 0.3s ease-in;
 }
 .menuft-footer address p {
   font-size: 18px;
